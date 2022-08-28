@@ -49,10 +49,20 @@
        <section class="hero-block btn-service">
         <div class="container hero-title">
             <h1 class="title">Ефективні рішення для <br> вашого бізнесу</h1>
-            <button type="button" class="service-button">Замовити послугу</button>
+            <button data-modal-open type="button" class="service-button">Замовити послугу</button>
         </div>
         </section>
-  
+        <!--модальне вікно-->
+<div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+        <button  class="modal-button" data-modal-close> 
+            <svg class="modal-close-icon" width="30px" height="30px">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
         <!--Увага до деталей-->
         <section class="features-block">
         <div class="container">
@@ -389,6 +399,6 @@
         
 
     </footer>
-
+    <script src="./js/modal.js"></script>
 </body>
 </html>
