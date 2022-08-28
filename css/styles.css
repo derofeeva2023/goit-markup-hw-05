@@ -244,6 +244,30 @@ margin-right: 30px;
 }
 
 /*what we do & team titles*/
+.thumb {
+    position: relative;  
+  }
+  .thumb > .label {
+    position: absolute;
+    display: block;
+    right: 0;
+    margin: 0;
+    bottom: 0;
+    height: 70px;
+   width: 370px;
+   padding-top: 27px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--main-light-color);
+    background-color: rgba(47, 48, 58, 0.8);
+
+  }
 .team-space{
 padding-top: 94px;
 padding-bottom: 94px;
