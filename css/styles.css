@@ -609,3 +609,41 @@ margin-right: 8px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/*overlay on cards*/
+.overlay-container{
+    position: relative;
+    width: 370px;
+    height: 294px;
+    display: inline-block;
+}
+.overlay{
+   position: absolute;
+   transition:  .3s ease;
+   opacity: 0;
+   
+}
+.overlay-container:hover .overlay{
+    opacity: 1;
+}
+.overlayText{
+color: var(--main-light-color);
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+/* or 156% */
+
+letter-spacing: 0.03em;
+position: absolute;
+padding: 63px 24px;
+}
+.overlayBottom{
+    height: 0;
+    width: 100%;
+    bottom:0;
+    left: 0;
+    background-color: var(--accent-color);
+}
+.overlay-container:hover .overlayBottom{
+    height: 100%;
+
+}
