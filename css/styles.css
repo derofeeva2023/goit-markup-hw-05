@@ -583,7 +583,7 @@ button{
 .btn-group li:not(:last-child){
 margin-right: 8px;
 }
-.btn-group button:hover, button:focus{
+.button-portfolio:hover, .button-portfolio:focus{
    background-color :var(--accent-color);
     color: var(--main-light-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -655,6 +655,8 @@ padding: 63px 24px;
     bottom:0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.2);
+opacity: 1;
+transition: opacity 250ms var(--timimig-function);
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -675,15 +677,19 @@ border-radius: 4px;
 }
 
 .modal-button{
+   width: 30px;
+   height: 30px;
     position: fixed;
     top:0;
   right:0;
 margin: 8px;
-border: none;
-background: transparent;
-
+background-color: var(--main-light-color);
+cursor: pointer;
+border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .modal-button:active{
-background: none;
-
-}
+    background-color: var(--main-light-color);}
