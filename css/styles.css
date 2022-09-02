@@ -123,7 +123,9 @@ position: relative;
 .top-menu .item:not(:last-child) {
 margin-right: 50px;
 }
-
+.item .contact-link .button-portfolio{
+    transition: opacity 250ms var(--timimig-function);
+}
 
 .menu-contact{
     display: flex;
